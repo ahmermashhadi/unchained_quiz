@@ -1,0 +1,13 @@
+.unchained-robotics-logo {
+    img {
+        width: 132px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .unchained-robotics-logo {
+        order: 0;
+        flex-grow: 1;
+    }
+}

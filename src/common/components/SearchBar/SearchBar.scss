@@ -1,0 +1,26 @@
+.search-bar {
+	width: 70%;
+    .search-icon {
+        color: #828282;
+    }
+
+    .main-search-input {
+        background-color: #313130;
+        color: #828282;
+		outline: none;
+		border-color: #828282;
+		border-width: 2px;
+
+        &::placeholder { 
+            color: #828282;
+            opacity: 1; 
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .search-bar {
+        order: 2;
+        width: 100%;
+    }
+}

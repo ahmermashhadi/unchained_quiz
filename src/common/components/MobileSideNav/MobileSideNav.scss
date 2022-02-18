@@ -1,0 +1,16 @@
+.mobile-sidemenu{
+	padding: 10px;
+
+	.menu-icon{
+		color: white;
+		min-width: 35px;
+		min-height: 35px;
+		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+    .mobile-sidemenu {
+        order: 0
+    }
+}
