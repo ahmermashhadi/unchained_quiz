@@ -1,0 +1,57 @@
+.product-features {
+    max-width: 1140px;
+    margin: auto;
+    padding-bottom: 4em;
+    .features-details {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+    }
+
+    .features-title {
+        font-size: 1.625rem;
+        color: #808285;
+        margin-bottom: 20px;
+    }
+
+    .features-description {
+        color: #808285;
+        padding: 20px 20px 0 0;
+    }
+
+    .features-specifications {
+        padding: 10px;
+        color: #313130;
+        text-align: left;
+
+        .spec-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .spec-description {
+            font-weight: bold;
+            font-size: 14px;
+            vertical-align: baseline;
+        }
+    }
+
+    .features-info {
+        padding: 10px;
+        color: #313130;
+        text-align: left;
+
+        .info-title {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .info-description {
+            font-weight: bold;
+            font-size: 14px;
+            vertical-align: baseline;
+            margin-left: 3.2rem;
+        }
+    }
+}

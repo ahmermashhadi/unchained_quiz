@@ -1,0 +1,25 @@
+.product-specifications {
+    max-width: 1140px;
+    margin: auto;
+
+    .specifications-title {
+        font-size: 1.625rem;
+        color: #808285;
+        margin-bottom: 20px;
+    }
+
+    .specifications-table {
+        .spec-table-col {
+            display: flex;
+            margin: auto;
+            flex-wrap: wrap;
+
+            div {
+                padding: 4px;
+            }
+        }
+		& > div:nth-child(odd) {
+			background-color: #FAFAFA;
+		}
+    }
+}

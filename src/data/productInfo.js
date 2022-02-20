@@ -75,17 +75,17 @@ const onRobotRg2 = {
     ],
     videos: [
       {
-        title: "RG2 Use Cases",
-        src: "https://unchainedrobotics.de/wp-content/uploads/2020/11/RG2_RG6_promotional_video_ENG.mp4",
-      },
-      {
         title: "Introducing the RG2 Gripper",
         src: "https://unchainedrobotics.de/wp-content/uploads/2020/11/RG2_RG6_Applications_video_ENG.mp4",
+      },
+      {
+        title: "RG2 Use Cases",
+        src: "https://unchainedrobotics.de/wp-content/uploads/2020/11/RG2_RG6_promotional_video_ENG.mp4",
       },
     ],
   },
   specifications: [
-    { title: "Category", value: "" },
+    { title: "Category", value: "-" },
     { title: "Payload", value: "2000 g" },
     { title: "Weight", value: "780 g" },
     { title: "Hub", value: "110 mm" },

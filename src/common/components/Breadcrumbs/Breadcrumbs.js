@@ -11,7 +11,7 @@ export const Breadcrumbs = () => {
     <div>
       {pathParams.map((path, index) => (
         <a
-          href
+          href="path"
           className="capitalize cursor-pointer mr-3 text-xs hover:text-green-400 transition delay-50 duration-300 ease-in-out"
           key={path}
         >

@@ -27,7 +27,7 @@ export const ProductInfo = ({ productInfo }) => {
             animation="cubeAnimation"
           >
             {productInfo.images.map((image) => (
-              <div data-src={image} />
+              <div key={image} data-src={image} />
             ))}
           </AutoplaySlider>
         </div>
@@ -60,23 +60,20 @@ export const ProductInfo = ({ productInfo }) => {
 
           <button
             type="button"
-            class="w-full mt-8 bg-white hover:bg-gray-900 hover:text-white rounded-full px-5 py-2.5 text-left mr-2 mb-2 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700 transition delay-50 duration-300 ease-in-out"
+            className="w-full mt-8 bg-white hover:bg-gray-900 hover:text-white rounded-full px-5 py-2.5 text-left mr-2 mb-2 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700 transition delay-50 duration-300 ease-in-out"
           >
             <FontAwesomeIcon icon={faPlus} className="mr-4" />
             Compare
           </button>
           <div className="border-b-2">
             <div>
-              <label
-                for="countries"
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
-              >
+              <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
                 Varient
               </label>
               <select
                 onChange={(e) => setVarient(e.target.value)}
                 id="countries"
-                class="varient-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
+                className="varient-select bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
               >
                 <option value="">Choose an option</option>
                 {productInfo.varients.map((v) => (
@@ -89,7 +86,7 @@ export const ProductInfo = ({ productInfo }) => {
             <button
               type="button"
               onClick={() => setVarient("")}
-              class="w-full mt-4 bg-white rounded-full px-5 text-left mr-2"
+              className="w-full mt-4 bg-white rounded-full px-5 text-left mr-2"
             >
               Clear
             </button>
@@ -101,13 +98,13 @@ export const ProductInfo = ({ productInfo }) => {
           <div>
             <button
               type="button"
-              class="w-full border-2 mt-2 bg-white hover:text-white hover:bg-[#313130] rounded-full px-5 py-2.5 text-centre mr-2 mb-2 transition delay-50 duration-300 ease-in-out"
+              className="w-full border-2 mt-2 bg-white hover:text-white hover:bg-[#313130] rounded-full px-5 py-2.5 text-centre mr-2 mb-2 transition delay-50 duration-300 ease-in-out"
             >
               Add to Card
             </button>
             <button
               type="button"
-              class="w-full bg-[#313130] border-2 mt-2 text-white hover:bg-[#4f4f4f] rounded-full px-5 py-2.5 text-centre mr-2 mb-2 transition delay-50 duration-300 ease-in-out"
+              className="w-full bg-[#313130] border-2 mt-2 text-white hover:bg-[#4f4f4f] rounded-full px-5 py-2.5 text-centre mr-2 mb-2 transition delay-50 duration-300 ease-in-out"
             >
               <FontAwesomeIcon icon={faEnvelope} className="mr-4" />
               Enquire now
@@ -122,9 +119,11 @@ export const ProductInfo = ({ productInfo }) => {
                   className="mr-4"
                 />
               </span>
-              <span className="basis-9/12">From 400€ a month with lease buy or installment.</span>
+              <span className="basis-9/12">
+                From 400€ a month with lease buy or installment.
+              </span>
             </p>
-            <a href>Learn More</a>
+            <a href="path">Learn More</a>
           </div>
         </div>
       </div>

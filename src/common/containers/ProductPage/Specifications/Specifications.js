@@ -1,7 +1,19 @@
-import React from 'react'
+import React from "react";
 
-export const Specifications = () => {
+import "./Specifications.scss";
+
+export const Specifications = ({ productSpecs }) => {
   return (
-	<div>Specifications</div>
-  )
-}
+    <div className="product-specifications">
+      <h1 className="specifications-title">Specifications</h1>
+      <section className="specifications-table">
+        {productSpecs.map((spec) => (
+          <div key={spec.title} className="spec-table-col">
+            <div className="w-1/3">{spec.title}</div>
+            <div className="w-1/3">{spec.value}</div>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
+};

@@ -5,16 +5,13 @@ import { Link } from "react-scroll";
 import { Features } from "./Features/Features";
 import { Specifications } from "./Specifications/Specifications";
 import { Downloads } from "./Downloads/Downloads";
-import { Videos } from "./Videos/Videos";
 import { Discussion } from "./Discussion/Discussion";
 
 import "react-awesome-slider/dist/styles.css";
 import "./ProductPage.scss";
 import { ProductInfo } from "./ProductInfo/ProductInfo";
 
-
 export const ProductPage = ({ productInfo }) => {
-
   return (
     <div>
       <div className="product-fixed-header">
@@ -69,17 +66,14 @@ export const ProductPage = ({ productInfo }) => {
       </div>
       <section className="pt-60">
         <ProductInfo productInfo={productInfo} />
-        <div id="features" style={{ height: 500 }}>
-          <Features />
+        <div id="features">
+          <Features productFeatures={productInfo.features} />
         </div>
-        <div id="specifications" style={{ height: 500 }}>
-          <Specifications />
+        <div id="specifications">
+          <Specifications productSpecs={productInfo.specifications} />
         </div>
         <div id="downloads" style={{ height: 500 }}>
           <Downloads />
-        </div>
-        <div id="videos" style={{ height: 500 }}>
-          <Videos />
         </div>
         <div id="discussion" style={{ height: 500 }}>
           <Discussion />

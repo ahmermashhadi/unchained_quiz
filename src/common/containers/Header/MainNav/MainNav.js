@@ -65,7 +65,7 @@ export const MainNav = () => {
         style={{ minWidth: "12rem" }}
       >
         <a
-          href="#pablo"
+          href="path"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap"
           }
@@ -74,7 +74,7 @@ export const MainNav = () => {
           EN
         </a>
         <a
-          href="#pablo"
+          href="path"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap"
           }
@@ -111,7 +111,7 @@ export const MainNav = () => {
         style={{ minWidth: "12rem" }}
       >
         <a
-          href="#pablo"
+          href="path"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap"
           }
@@ -120,7 +120,7 @@ export const MainNav = () => {
           EN
         </a>
         <a
-          href="#pablo"
+          href="path"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap"
           }

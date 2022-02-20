@@ -52,7 +52,7 @@ export const NavigationBar = ({ color }) => {
         style={{ minWidth: "12rem" }}
       >
         <a
-          href="#pablo"
+          href="path"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap" +
             (color === "white" ? " text-blueGray-700" : "text-white")
@@ -62,7 +62,7 @@ export const NavigationBar = ({ color }) => {
           EN
         </a>
         <a
-          href="#pablo"
+          href="path"
           className={
             "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap" +
             (color === "white" ? " text-blueGray-700" : "text-white")
