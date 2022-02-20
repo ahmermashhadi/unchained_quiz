@@ -6,3 +6,7 @@
   background: #36ff9a;
   color: #313130;
 }
+
+p {
+  overflow-wrap: break-word;
+}

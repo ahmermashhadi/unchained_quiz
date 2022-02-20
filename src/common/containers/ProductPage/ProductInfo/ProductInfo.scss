@@ -1,0 +1,22 @@
+.lease-info {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+	margin-top: 2em;
+
+    p {
+		display: flex;
+        color: #808285;
+        width: 75%;
+        padding: 12px;
+    }
+
+    a {
+		font-weight: bold;
+		text-decoration: underline;
+		cursor: pointer;
+        padding: 12px;
+        width: 25%;
+    }
+}

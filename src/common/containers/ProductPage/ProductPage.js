@@ -1,9 +1,6 @@
 import React from "react";
 import { Breadcrumbs } from "../../components/Breadcrumbs/Breadcrumbs";
 import { Link } from "react-scroll";
-import AwesomeSlider from "react-awesome-slider";
-import withAutoplay from "react-awesome-slider/dist/autoplay";
-import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 
 import { Features } from "./Features/Features";
 import { Specifications } from "./Specifications/Specifications";
@@ -11,14 +8,13 @@ import { Downloads } from "./Downloads/Downloads";
 import { Videos } from "./Videos/Videos";
 import { Discussion } from "./Discussion/Discussion";
 
-import productInfo from "../../../data/productInfo";
-
 import "react-awesome-slider/dist/styles.css";
 import "./ProductPage.scss";
+import { ProductInfo } from "./ProductInfo/ProductInfo";
 
-const AutoplaySlider = withAutoplay(AwesomeSlider);
 
-export const ProductSection = () => {
+export const ProductPage = ({ productInfo }) => {
+
   return (
     <div>
       <div className="product-fixed-header">
@@ -72,23 +68,7 @@ export const ProductSection = () => {
         </div>
       </div>
       <section className="pt-60">
-        <div className="product-info">
-          <div className="product-slider w-6/12">
-            <AutoplaySlider
-              play={true}
-              cancelOnInteraction={false} // should stop playing on user interaction
-              interval={3000}
-              animation="cubeAnimation"
-            >
-              {productInfo.images.map((image) => (
-                <div data-src={image} />
-              ))}
-            </AutoplaySlider>
-          </div>
-          <div className="product-information w-6/12 h-full">
-            <h1 className="font-bold text-3xl">{productInfo.name}</h1>
-          </div>
-        </div>
+        <ProductInfo productInfo={productInfo} />
         <div id="features" style={{ height: 500 }}>
           <Features />
         </div>

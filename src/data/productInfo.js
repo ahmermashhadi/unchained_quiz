@@ -9,7 +9,7 @@ const onRobotRg2 = {
   ],
   description:
     "The RG2 – 2kg payload robot arm gripper is a flexible collaborative gripper with built-in Quick Changer and up to 110mm stroke. It provides intelligence, fast deployment, easy customization and programming. The outstanding software features of our one-system solution decrease engineering and manufacturing time significantly. The RG2 gripper is a tool for a wide range of applications. Customized fingertips provide great gripping flexibility, customers can use one tool for different parts of the production process maximizing robot utilization. The RG2 works seamlessly with our Dual Quick Changer and any of our other grippers to help you maximize utilization of your robots. ",
-  varient: [
+  varients: [
     { type: "Greifer (ohne Zubehör)", amount: "3.530,00€" },
     { type: "ABB Kit", amount: "4.576,00€" },
     { type: "Denso Kit", amount: "4.576,00€" },

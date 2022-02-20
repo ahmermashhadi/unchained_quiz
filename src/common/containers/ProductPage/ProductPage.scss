@@ -8,8 +8,40 @@
     z-index: 11;
 }
 
-.product-info{
+.product-info {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 10em;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-detail-section {
+    display: flex;
+    padding: 2rem 0;
+}
+
+.product-description {
+    color: #808285;
+}
+
+.varient-select {
+    font-size: 16px;
+    font-weight: 400;
+    color: #bdbdbd;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #bdbdbd;
+    border-radius: 4px 4px 0 0;
+    padding: 8px 12px;
+
+    &:focus {
+        border: none;
+    }
 }
