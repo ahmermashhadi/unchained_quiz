@@ -1,5 +1,5 @@
 .search-bar {
-	width: 70%;
+	width: 60%;
     .search-icon {
         color: #828282;
     }
@@ -14,6 +14,10 @@
         &::placeholder { 
             color: #828282;
             opacity: 1; 
+        }
+        &:focus {
+            background-color: white;
+            color: #313130;
         }
     }
 }

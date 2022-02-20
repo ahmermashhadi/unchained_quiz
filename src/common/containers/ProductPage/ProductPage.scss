@@ -1,0 +1,15 @@
+.product-fixed-header {
+    position: fixed;
+    width: 100%;
+    top: 7em;
+    padding: 1em 2em;
+    background: white;
+    left: 0;
+    z-index: 11;
+}
+
+.product-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
