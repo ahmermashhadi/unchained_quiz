@@ -100,7 +100,7 @@ export const ProductInfo = ({ productInfo }) => {
               type="button"
               className="w-full border-2 mt-2 bg-white hover:text-white hover:bg-[#313130] rounded-full px-5 py-2.5 text-centre mr-2 mb-2 transition delay-50 duration-300 ease-in-out"
             >
-              Add to Card
+              Add to Cart
             </button>
             <button
               type="button"
