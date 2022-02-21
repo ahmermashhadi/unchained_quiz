@@ -1,0 +1,38 @@
+.contact-page {
+    background-color: #36ff9a10;
+
+    .contact-container {
+        margin: auto;
+        max-width: 1140px;
+        display: flex;
+
+        .contact-info {
+            width: 50%;
+            color: #313130;
+            padding: 82px 0 0;
+
+            h1 {
+                line-height: 1.38;
+                font-size: 1.625rem;
+                margin-bottom: 0.7em em;
+                font-weight: bold;
+            }
+
+            p {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                font-weight: 500;
+            }
+        }
+
+        .contact-form {
+            width: 50%;
+            padding: 3rem 0;
+
+            .form-section {
+                background-color: white;
+				padding: 3em;
+            }
+        }
+    }
+}

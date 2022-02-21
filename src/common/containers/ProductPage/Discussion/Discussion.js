@@ -1,7 +1,11 @@
-import React from 'react'
+import React from "react";
+
+import "./Discussion.scss";
 
 export const Discussion = () => {
   return (
-	<div>Discussion</div>
-  )
-}
+    <div className="discussion-page">
+      <div className="discussion-title">Discussion</div>
+    </div>
+  );
+};

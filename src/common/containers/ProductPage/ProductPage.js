@@ -5,7 +5,6 @@ import { Link } from "react-scroll";
 import { Features } from "./Features/Features";
 import { Specifications } from "./Specifications/Specifications";
 import { Downloads } from "./Downloads/Downloads";
-import { Discussion } from "./Discussion/Discussion";
 
 import "react-awesome-slider/dist/styles.css";
 import "./ProductPage.scss";
@@ -72,11 +71,8 @@ export const ProductPage = ({ productInfo }) => {
         <div id="specifications">
           <Specifications productSpecs={productInfo.specifications} />
         </div>
-        <div id="downloads" style={{ height: 500 }}>
-          <Downloads />
-        </div>
-        <div id="discussion" style={{ height: 500 }}>
-          <Discussion />
+        <div id="downloads">
+          <Downloads productDownloads={productInfo.downloads} />
         </div>
       </section>
     </div>

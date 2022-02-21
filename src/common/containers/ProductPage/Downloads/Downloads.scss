@@ -1,0 +1,42 @@
+.product-downloads {
+    max-width: 1140px;
+    margin: auto;
+    padding-bottom: 4em;
+
+    .downloads-title {
+        font-size: 1.625rem;
+        color: #808285;
+        margin-bottom: 20px;
+    }
+
+    .downloads-section {
+        color: #313130;
+        display: flex;
+        align-items: center;
+
+        .doc-image {
+            width: 115px;
+
+            img {
+                margin-right: 10px;
+
+                &:hover {
+                    transition: all .3s;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        .doc-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .doc-desc {
+            margin-bottom: 10px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
